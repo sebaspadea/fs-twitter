@@ -1,4 +1,4 @@
 class Tweet < ApplicationRecord
-  belongs_to :user, class_name: "user", foreign_key: "user_id"
+  belongs_to :user
   validates :message, length: { maximum: 400 }
 end
